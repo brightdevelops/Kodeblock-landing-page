@@ -45,6 +45,8 @@ src/
 ├─ App.jsx
 └─ main.jsx
 
+yaml
+Copy code
 
 ---
 
@@ -54,37 +56,36 @@ src/
 ```bash
 git clone https://github.com/brightdevelops/Kodeblock-landing-page.git
 cd Kodeblock-landing-page
-
 2️⃣ Install dependencies
-
-npm install 
-
+bash
+Copy code
+npm install
 3️⃣ Run the development server
-
-npm run dev 
-
+bash
+Copy code
+npm run dev
 Visit → http://localhost:5173
 
 🎨 Tailwind CSS v4 Configuration
-
 This project uses Tailwind CSS v4.
 
 src/styles/index.css
 
+css
+Copy code
 @import "tailwindcss";
 
 :root { --kb-dark: #3a3a3a; --kb-light: #ebe2d6; }
 html, body, #root { height: 100%; }
-
-
 postcss.config.js
 
+js
+Copy code
 export default {
   plugins: {
     '@tailwindcss/postcss': {}
   }
 }
-
 🌿 Branch Workflow
 Branch	Purpose
 main	Production-ready code
@@ -93,6 +94,8 @@ feature/*	Individual features (e.g. feature/hero-section)
 
 Typical flow
 
+bash
+Copy code
 # 1. Pull latest dev
 git pull origin dev
 
@@ -104,20 +107,17 @@ git commit -m "feat: add hero section"
 
 # 4. Push to GitHub
 git push -u origin feature/section-name
-
-
 Then open a Pull Request → target dev.
 After approval, merge dev → main for deployment.
 
 💻 Build for Production
+bash
+Copy code
 npm run build
 npm run preview
-
-
 Output files appear in the dist/ directory.
 
 🌍 Deployment
-
 Easiest options:
 
 Vercel → auto-deploys on push to main
@@ -125,7 +125,6 @@ Vercel → auto-deploys on push to main
 Netlify → build command npm run build, output dist
 
 👥 Contributing Guide
-
 Fork the repo
 
 Create a feature branch
@@ -139,13 +138,10 @@ Request a review from a team member
 ✅ Ensure lint and build pass before submitting PRs.
 
 🧠 Credits
-
 Developed collaboratively by the KODEBLOCK team
-Led by BrightDevelops
- 💡
+Led by BrightDevelops 💡
 
 📄 License
-
 MIT © 2025 BrightDevelops
 
 🧭 Quick Start Summary
