@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* (Optional) your global styles */
+:root { --kb-dark: #3a3a3a; --kb-light: #ebe2d6; }
+html, body, #root { height: 100%; }
