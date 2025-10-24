@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="sticky bg-[#c7b6a3]/95 backdrop-blur-md mx-auto px-14 py-5 shadow-md">
+        <header className="sticky top-0 bg-[#c7b6a3]/95 backdrop-blur-md mx-auto px-24 py-5 shadow-xl">
             <div className="flex justify-between items-center">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ const Navbar = () => {
 
                 {/* Explore Button */}
                 <div className="hidden md:block">
-                    <button className="bg-gradient-to-r from-[#93440D] to-[#F97316] text-white font-medium px-5 py-2 rounded-full cursor-pointer transition-transform duration-300 hover:scale-105">
+                    <button className="bg-gradient-to-br from-[#93440D] to-[#F97316] text-white font-medium px-5 py-2 rounded-full cursor-pointer transition-transform duration-300 hover:scale-105">
                         Explore our products
                     </button>
                 </div>
