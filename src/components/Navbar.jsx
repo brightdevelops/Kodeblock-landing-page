@@ -19,13 +19,15 @@ const Navbar = () => {
             <div className="flex justify-between items-center relative px-5 max-w-7xl mx-auto">
 
                 {/* Left - Logo */}
-                <div className="flex items-center gap-2">
-                    <img src={Logo} alt="Logo" className="w-10 h-10 rounded-md" />
-                    <h1 className="font-bold text-white text-lg hidden sm:block">
-                        <span className="text-[#FF8530]">K</span>OD
-                        <span className="text-[#FF8530]">E</span>BLOCK
-                    </h1>
-                </div>
+                <a href="#">
+                    <div className="flex items-center gap-2">
+                        <img src={Logo} alt="Logo" className="w-10 h-10 rounded-md" />
+                        <h1 className="font-bold text-white text-lg hidden sm:block">
+                            <span className="text-[#FF8530]">K</span>OD
+                            <span className="text-[#FF8530]">E</span>BLOCK
+                        </h1>
+                    </div>
+                </a>
 
                 {/* Center - Nav Items */}
                 <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center gap-4">
@@ -35,8 +37,8 @@ const Navbar = () => {
                             href={item.href}
                             onClick={() => setActiveNav(item.label)}
                             className={`cursor-pointer px-3 py-1 rounded-full text-[15px] font-medium whitespace-nowrap transition-all ${activeNav === item.label
-                                    ? "bg-[#fff] text-[#FF8530]"
-                                    : "text-white hover:text-[#FF8530]"
+                                ? "bg-[#fff] text-[#FF8530]"
+                                : "text-white hover:text-[#FF8530]"
                                 }`}
                         >
                             {item.label}
@@ -70,8 +72,8 @@ const Navbar = () => {
                                 setIsOpen(false);
                             }}
                             className={`cursor-pointer w-full text-center py-2 rounded-md text-base transition ${activeNav === item.label
-                                    ? "bg-[#fff] text-[#FF8530]"
-                                    : "text-white hover:text-[#FF8530]"
+                                ? "bg-[#fff] text-[#FF8530]"
+                                : "text-white hover:text-[#FF8530]"
                                 }`}
                         >
                             {item.label}
