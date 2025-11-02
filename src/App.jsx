@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Hero from './sections/Hero'
-import Project from './sections/Project'
-import About from './sections/About'
-import Team from './sections/Team'
+import Hero from './components/Hero'
+import Project from './components/Project'
+import About from './components/About'
+import Team from './components/Team'
+
 
 const App = () => {
   return (
