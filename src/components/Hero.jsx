@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="text-[#FF8530]">Future</span> Together
           </h1>
 
-          <p className="text-gray-200 leading-relaxed text-base md:text-lg max-w-md">
+          <p className="text-[#D1D5DB] leading-relaxed text-base md:text-lg max-w-md">
             Kodeblock is where developers and creatives unite to craft
             products that solve real problems. Join our community-driven
             platform bridging Web2 convenience with Web3 innovation.

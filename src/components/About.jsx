@@ -35,11 +35,11 @@ const About = () => {
                             <span className="text-[#FF8530]">E</span>BLOCK
                         </h1>
 
-                        <p className="text-gray-200 leading-relaxed text-base md:text-lg">
+                        <p className="leading-relaxed text-base md:text-lg">
                             We're building a revolutionary platform that connects developers and creatives to solve real-world problems through innovative digital products.
                         </p>
                         
-                        <p className="text-gray-200 leading-relaxed text-base md:text-lg">
+                        <p className="leading-relaxed text-base md:text-lg">
                             Our mission extends beyond traditional collaboration - we're pioneering blockchain-based payment solutions that bridge Web2 convenience with Web3 power, making digital transactions seamless and accessible.
                         </p>
 
@@ -53,7 +53,7 @@ const About = () => {
                                             className='w-12 h-12'
                                         />
                                     </div>
-                                    <p className='text-gray-200 font-medium'>
+                                    <p className='font-medium'>
                                         {feature.description}
                                     </p>
                                 </div>
