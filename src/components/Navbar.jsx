@@ -47,7 +47,7 @@ const Navbar = () => {
                 </nav>
 
                 {/* Right - Gradient Button */}
-                <button className="cursor-pointer hidden md:block bg-gradient-to-br from-[#93440D] to-[#F97316] text-white px-4 py-2 rounded-full font-medium">
+                <button className="cursor-pointer hidden md:block bg-gradient-to-r from-[#93440D] to-[#F97316] text-white px-4 py-2 rounded-full font-medium">
                     Explore our products
                 </button>
 

@@ -35,7 +35,7 @@ const Projects = () => {
             {/* Heading */}
             <div className="text-center mb-10">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">Our Projects</h2>
-                <p className="text-gray-300 text-xl font-normal md:text-base">
+                <p className="text-gray-300 text-base font-normal md:text-xl">
                     Discover innovative solutions built by our community
                 </p>
             </div>
