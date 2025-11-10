@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import Gospel from "../assets/images/gospel.jpg";
-import Tosin from "../assets/images/my-image.png";
+import Tosin from "../assets/images/tosin.png";
 import Hosea from "../assets/images/hosea.jpeg";
 import Dennis from "../assets/images/dennis.jpeg";
 import Alex from "../assets/images/alex.jpeg";
