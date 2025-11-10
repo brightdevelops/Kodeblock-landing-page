@@ -79,9 +79,11 @@ const Footer = () => {
                             ))}
                         </div>
 
-                        <button className="cursor-pointer text-white px-4 py-2 rounded-md font-medium bg-gradient-to-r from-[#FF8530] to-[#99501D]">
-                            Explore our products
-                        </button>
+                        <a href="#projects">
+                            <button className="cursor-pointer text-white px-4 py-2 rounded-md font-medium bg-gradient-to-r from-[#FF8530] to-[#99501D]">
+                                Explore our products
+                            </button>
+                        </a>
                     </div>
 
                 </div>
