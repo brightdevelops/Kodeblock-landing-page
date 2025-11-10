@@ -8,22 +8,21 @@ const projects = [
         id: 1,
         title: "KOLD",
         status: "Building",
-        description:
-            "A web3 payment gateway which guarantees seamless Blockchain technology and crypto adoption into our daily affairs",
+        description: "A web3 payment gateway that guarantees seamless blockchain technology and crypto adoption into daily affairs.",
         image: KoldImg,
     },
     {
         id: 2,
         title: "Collab Hub",
-        status: "Completed",
-        description: "A platform connecting designers with developers",
+        status: "Building",
+        description: "A platform connecting designers to developers to produce something revolutionizing.",
         image: CollabHubImg,
     },
     {
         id: 3,
         title: "De-Market",
-        status: "Completed",
-        description: "Revolutionary marketplace powered by blockchain technology",
+        status: "Building",
+        description: "De-Market is a revolutionary marketplace that is powered by blockchain technologies.",
         image: DeMarketImg,
     },
 ];
@@ -56,7 +55,7 @@ const Projects = () => {
                     {projects.map((project) => (
                         <div key={project.id} className="relative text-center max-w-sm">
                             <span
-                                className={`absolute -top-6 left-16 -translate-x-1/2 px-5 py-1.5 rounded-full text-xl font-medium shadow-md ${project.status === "Building"
+                                className={`absolute -top-6 left-14 -translate-x-1/2 px-5 py-1.5 rounded-full text-xl font-medium shadow-md ${project.status === "Building"
                                         ? "bg-[#fff3eb] text-[#FF8530]"
                                         : "bg-[#FF8530] text-white"
                                     }`}
