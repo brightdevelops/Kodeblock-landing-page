@@ -1,4 +1,6 @@
 import React from 'react'
+import { motion } from "framer-motion";
+import { fadeIn, staggerContainer } from "../utils/animations";
 import developmentImg from "../assets/images/development.png";
 import creativityImg from "../assets/images/creativity.png";
 import communityImg from "../assets/images/community.png";
@@ -22,10 +24,20 @@ const About = () => {
     ];
 
     return (
-        <section className="bg-gradient-to-b from-[#DDC9B3] to-[#776C60] w-full py-20 px-5 md:px-10" id="about">
-            <div className='max-w-7xl text-white mx-auto'>
-
-                <div className='flex flex-col md:flex-row justify-between items-center gap-10'>
+        <motion.section
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            className="bg-gradient-to-b from-[#DDC9B3] to-[#776C60] w-full py-20 px-5 md:px-10" 
+            id="about"
+        >
+            <motion.div 
+                variants={staggerContainer(0.1, 0.2)}
+                className='max-w-7xl text-white mx-auto'
+            >
+                <motion.div 
+                    variants={fadeIn('up', 0.3)}
+                    className='flex flex-col md:flex-row justify-between items-center gap-10'>
 
                     {/* Left side - Text Content */}
                     <div className='flex flex-col gap-6 md:w-1/2'>
@@ -75,10 +87,10 @@ const About = () => {
                         </div>
                     </div>
 
-                </div>
+                </motion.div>
 
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     )
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,6 +13,9 @@ import Dennis from "../assets/images/dennis.jpeg";
 import Alex from "../assets/images/alex.jpeg";
 import Lawal from "../assets/images/lawal.jpeg";
 import Bright from "../assets/images/bright.jpg";
+import Isokpehi from "../assets/images/Isokpehi.jpg";
+
+// Animations removed: component now renders statically without Framer Motion
 
 const teamMembers = [
     {
@@ -75,21 +78,25 @@ const teamMembers = [
             twitter: "https://x.com/Denn1sIkechukwu?t=HTWsGari2GYW7jnSDAtMlA&s=09",
         },
     },
+    {
+        name: "Daniel Isokpehi",
+        role: "Mobile Developer",
+        img: Isokpehi,
+        socials: {
+            github: "https://github.com/Danyyel06",
+            linkedin: "https://www.linkedin.com/in/isokpehi-daniel-03305824a",
+        },
+    },
 ];
 
 const TeamCarousel = () => {
     return (
-        <section
-            id="team"
-            className="py-20 bg-[#333333]"
-        >
+        <section id="team" className="py-20 bg-[#333333]">
             <div className="max-w-7xl mx-auto px-7 text-center">
                 {/* Heading */}
-                <h2 className="text-4xl font-bold text-white mb-3">
-                    Meet Our Team
-                </h2>
+                <h2 className="text-4xl font-bold text-white mb-3">Meet Our Team</h2>
                 <p className="text-[#9CA3AF] text-lg mb-12">
-                    The visionaries behind <span className="font-semibold">KODEBLOCK</span>
+                    The visionaries behind <span className="font-semibold text-[#FF8530]">KODEBLOCK</span>
                 </p>
 
                 {/* Carousel */}
@@ -108,19 +115,19 @@ const TeamCarousel = () => {
                 >
                     {teamMembers.map((member, index) => (
                         <SwiperSlide key={index}>
-                            <div className="rounded-2xl p-6 hover:scale-105 transition-all duration-300 text-center">
-                                <img
-                                    src={member.img}
-                                    alt={member.name}
-                                    className="w-32 h-32 object-cover mx-auto rounded-full"
-                                    loading="lazy"
-                                />
-                                <h3 className="text-xl font-semibold mt-4 text-white">
-                                    {member.name}
-                                </h3>
-                                <p className="text-[#FF8530] font-medium mb-4 whitespace-nowrap">
-                                    {member.role}
-                                </p>
+                            <div
+                                className="rounded-2xl p-6 text-center"
+                            >
+                                <div>
+                                    <img
+                                        src={member.img}
+                                        alt={member.name}
+                                        className="w-32 h-32 object-cover mx-auto rounded-full transition-transform duration-300 hover:scale-110"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <h3 className="text-xl font-semibold mt-4 text-white">{member.name}</h3>
+                                <p className="text-[#FF8530] font-medium mb-4 whitespace-nowrap">{member.role}</p>
 
                                 {/* Social Icons */}
                                 <div className="flex justify-center gap-4 mt-3">
@@ -129,7 +136,7 @@ const TeamCarousel = () => {
                                             href={member.socials.linkedin}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-[#FF8530] transition-transform transform hover:scale-125"
+                                            className="text-white hover:text-[#FF8530]"
                                         >
                                             <FaLinkedin size={18} />
                                         </a>
@@ -139,7 +146,7 @@ const TeamCarousel = () => {
                                             href={member.socials.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-[#FF8530] transition-transform transform hover:scale-125"
+                                            className="text-white hover:text-[#FF8530]"
                                         >
                                             <FaGithub size={18} />
                                         </a>
@@ -149,7 +156,7 @@ const TeamCarousel = () => {
                                             href={member.socials.twitter}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-[#FF8530] transition-transform transform hover:scale-125"
+                                            className="text-white hover:text-[#FF8530]"
                                         >
                                             <FaTwitter size={18} />
                                         </a>
@@ -159,7 +166,7 @@ const TeamCarousel = () => {
                                             href={member.socials.instagram}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-white hover:text-[#FF8530] transition-transform transform hover:scale-125"
+                                            className="text-white hover:text-[#FF8530]"
                                         >
                                             <FaInstagram size={18} />
                                         </a>

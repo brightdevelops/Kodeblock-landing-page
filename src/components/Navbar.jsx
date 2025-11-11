@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Logo from "../../public/favicone.jpeg";
 
@@ -14,20 +15,47 @@ const Navbar = () => {
     ];
 
     return (
-        <header className="fixed w-full bg-[#776C60]/50 py-3 z-50 backdrop-blur-3xl">
+        <motion.header 
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ type: "spring", damping: 30 }}
+            className="fixed w-full bg-[#776C60]/50 py-3 z-50 backdrop-blur-3xl"
+        >
             {/* Inner container to center the content */}
             <div className="flex justify-between items-center relative px-5 max-w-7xl mx-auto">
 
                 {/* Left - Logo */}
-                <a href="#">
+                <motion.a 
+                    href="#"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                >
                     <div className="flex items-center gap-2">
-                        <img src={Logo} alt="Logo" className="w-10 h-10 rounded-md" />
-                        <h1 className="font-bold text-white text-lg hidden sm:block">
-                            <span className="text-[#FF8530]">K</span>OD
-                            <span className="text-[#FF8530]">E</span>BLOCK
-                        </h1>
+                        <motion.img 
+                            initial={{ rotate: -180 }}
+                            animate={{ rotate: 0 }}
+                            transition={{ duration: 0.5 }}
+                            src={Logo} 
+                            alt="Logo" 
+                            className="w-10 h-10 rounded-md" 
+                        />
+                        <motion.h1 
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.2 }}
+                            className="font-bold text-white text-lg hidden sm:block"
+                        >
+                            <motion.span 
+                                className="text-[#FF8530]"
+                                whileHover={{ scale: 1.2 }}
+                            >K</motion.span>OD
+                            <motion.span 
+                                className="text-[#FF8530]"
+                                whileHover={{ scale: 1.2 }}
+                            >E</motion.span>BLOCK
+                        </motion.h1>
                     </div>
-                </a>
+                </motion.a>
 
                 {/* Center - Nav Items */}
                 <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 items-center gap-4">
@@ -86,7 +114,7 @@ const Navbar = () => {
                     </button>
                 </div>
             )}
-        </header>
+        </motion.header>
     );
 };
 
