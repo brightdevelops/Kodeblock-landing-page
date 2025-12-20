@@ -9,13 +9,10 @@ import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 import Gospel from "../assets/images/gospel.jpg";
 import Tosin from "../assets/images/tosin.png";
 import Hosea from "../assets/images/hosea.jpeg";
-import Dennis from "../assets/images/dennis.jpeg";
 import Alex from "../assets/images/alex.jpeg";
 import Lawal from "../assets/images/lawal.jpeg";
 import Bright from "../assets/images/bright.jpg";
-import Isokpehi from "../assets/images/Isokpehi.jpg";
 
-// Animations removed: component now renders statically without Framer Motion
 
 const teamMembers = [
     {
@@ -68,25 +65,7 @@ const teamMembers = [
             github: "https://github.com/PrognosticAlex",
             twitter: "https://x.com/Forgingalex",
         },
-    },
-    {
-        name: "Ikechukwu Dennis",
-        role: "Frontend Developer",
-        img: Dennis,
-        socials: {
-            github: "https://github.com/dennisikechukwu",
-            twitter: "https://x.com/Denn1sIkechukwu?t=HTWsGari2GYW7jnSDAtMlA&s=09",
-        },
-    },
-    {
-        name: "Daniel Isokpehi",
-        role: "Mobile Developer",
-        img: Isokpehi,
-        socials: {
-            github: "https://github.com/Danyyel06",
-            linkedin: "https://www.linkedin.com/in/isokpehi-daniel-03305824a",
-        },
-    },
+    }
 ];
 
 const TeamCarousel = () => {
